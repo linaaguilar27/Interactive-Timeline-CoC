@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoC Revision Timeline</title>
+
+<style>
+
+    body {
+        font-family: "Greycliff CF", sans-serif;
+        color: #285C4D;
+    }
+
+    .timeline-container {
+        background: #f5f9ed;
+        padding: 30px 20px 60px;
+        text-align: center;
+    }
+
+    .timeline {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin: 40px 0 50px;
+        height: 10px;
+    }
+
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: 16px;
+        background: linear-gradient(
+            to right,
+            #78BE20 0%,
+            #78BE20 25%,
+            #D4BE97 25%,
+            #D4BE97 60%,
+            #8ABADD 60%,
+            #8ABADD 100%
+        );
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    .timeline::after {
+        content: "➤";
+        position: absolute;
+        top: 50%;
+        right: -18px;
+        font-size: 30px;
+        color: #8ABADD;
+        transform: translateY(-50%);
+    }
+
+    .timeline-step {
+        position: relative;
+        cursor: pointer;
+        z-index: 2;
+        flex: 1;
+        margin-top: -8px;
+    }
+
+    .timeline-step .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: 6px solid;
+        background: white;
+        transition: background 0.3s;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .timeline-step.active .circle {
+        background: #285C4D;
+    }
+
+    .timeline-step span {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .description-box {
+        display: none;
+        margin-top: 100px;
+        min-height: 150px;
+        padding: 20px;
+        background: white;
+        border-left: 5px solid;
+        text-align: left;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.08);
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .description-box.active {
+        display: block;
+    }
+
+    .description-box ul {
+        padding-left: 22px;
+    }
+
+    .description-box li {
+        margin-bottom: 10px;
+    }
+
+    .description-box h3 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+
+    .description-box strong {
+        color: #285C4D;
+    }
+
+    .description-box a {
+        color: #285C4D;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="timeline-container">
+
+    <!-- ========================================= -->
+    <!-- TIMELINE -->
+    <!-- ========================================= -->
+
+    <div class="timeline">
+
+        <div class="timeline-step">
+            <div class="circle" style="border-color:#78BE20;"></div>
+            <span style="color:#78BE20;">2022</span>
+        </div>
+
+        <div class="timeline-step">
+            <div class="circle" style="border-color:#78BE20;"></div>
+            <span style="color:#78BE20;">2023</span>
+        </div>
+
+        <div class="timeline-step">
+            <div class="circle" style="border-color:#D4BE97;"></div>
+            <span style="color:#D4BE97;">2024</span>
+        </div>
+
+        <div class="timeline-step">
+            <div class="circle" style="border-color:#D4BE97;"></div>
+            <span style="color:#D4BE97;">2025</span>
+        </div>
+
+        <div class="timeline-step active">
+            <div class="circle" style="border-color:#8ABADD;"></div>
+            <span style="color:#8ABADD;">2026</span>
+        </div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- 2022 -->
+    <!-- ========================================= -->
+
+    <div id="desc-0" class="description-box" style="border-left-color:#78BE20;">
+
+        <h3 style="color:#78BE20;">
+            2022 – Review Report Consultation
+        </h3>
+
+        <ul>
+            <li>
+                Public consultation on proposed changes in the standard revision.
+            </li>
+
+            <li>
+                <strong>Timeline:</strong> 26 July 2022 – 02 September 2022
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- 2023 -->
+    <!-- ========================================= -->
+
+    <div id="desc-1" class="description-box" style="border-left-color:#78BE20;">
+
+        <h3 style="color:#78BE20;">
+            2023 – Chain of Custody Topical Workshops
+        </h3>
+
+        <p>
+            FSC invited interested stakeholders to participate in topical workshops related to the Chain of Custody Standard revision process.
+        </p>
+
+        <ul>
+
+            <li>
+                Expanding the scope of FSC-STD-40-007 –
+                <a href="https://connect.fsc.org/sites/default/files/2023-08/one-pager%2020%20Sep.pdf" target="_blank">
+                    Learn more
+                </a>
+            </li>
+
+            <li>
+                Reinforcing FSC 100% –
+                <a href="https://connect.fsc.org/sites/default/files/2023-08/one-pager%2027%20Sep.pdf" target="_blank">
+                    Learn more
+                </a>
+            </li>
+
+            <li>
+                Developing Mechanisms to Address Integrity Risks in FSC Certified Supply Chains –
+                <a href="https://connect.fsc.org/sites/default/files/2023-08/one-pager%204%20Oct.pdf" target="_blank">
+                    Learn more
+                </a>
+            </li>
+
+            <li>
+                Streamlining Chain of Custody Standards –
+                <a href="https://connect.fsc.org/sites/default/files/2023-08/one-pager%2011%20Oct.pdf" target="_blank">
+                    Learn more
+                </a>
+            </li>
+
+            <li>
+                Core Labour Requirements in Chain of Custody Standards –
+                <a href="https://connect.fsc.org/sites/default/files/2023-10/Workshop%205%20%281%29.pdf" target="_blank">
+                    Learn more
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- 2024 -->
+    <!-- ========================================= -->
+
+    <div id="desc-2" class="description-box" style="border-left-color:#D4BE97;">
+
+        <h3 style="color:#D4BE97;">
+            2024 – Conceptual Phase Consultation
+        </h3>
+
+        <ul>
+
+            <li>
+                Public consultation on proposed conceptual phase changes.
+            </li>
+
+            <li>
+                Stakeholders participated in webinars with simultaneous interpretation in Spanish and French.
+            </li>
+
+            <li>
+                Public Consultation for Chain of Custody Standards Revision:
+                <ul>
+                    <li>04 September 2024</li>
+                    <li>25 September 2024</li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="https://connect.fsc.org/media/fsc-coc-one-pagerpdf" target="_blank">
+                    Learn more
+                </a>
+            </li>
+
+            <li>
+                <a href="https://connect.fsc.org/media/coc-conceptual-phase-reportenpdf" target="_blank">
+                    Conceptual phase report
+                </a>
+            </li>
+
+            <li>
+                <a href="https://connect.fsc.org/media/consultation-report-coc-conceptual-phase" target="_blank">
+                    Consultation results
+                </a>
+            </li>
+
+            <li>
+                <strong>Timeline:</strong> 16 August – 15 October 2024
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- 2025 -->
+    <!-- ========================================= -->
+
+    <div id="desc-3" class="description-box" style="border-left-color:#D4BE97;">
+
+        <h3 style="color:#D4BE97;">
+            2025 – Working Group & Drafting Phase
+        </h3>
+
+        <ul>
+
+            <li>
+                FSC opened applications for Working Group members from 11 December 2024 to 31 January 2025.
+            </li>
+
+            <li>
+                The Working Group kick-off meeting was held in Bonn, Germany from 20 – 22 May 2025.
+            </li>
+
+            <li>
+                FSC conducted stakeholder webinars on 18 November and 3 December 2025 with Spanish and French translation support.
+            </li>
+
+            <li>
+                Watch the webinar recording
+                <a href="https://www.youtube.com/watch?v=UNM7bUl9rr0" target="_blank">
+                    here
+                </a>.
+            </li>
+
+            <li>
+                Public consultation on Draft 1 of revised CoC standards opened on 15 November 2025.
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- 2026 -->
+    <!-- ========================================= -->
+
+    <div id="desc-4" class="description-box active" style="border-left-color:#8ABADD;">
+
+        <h3 style="color:#8ABADD;">
+            2026 – Draft 2 Consultation
+        </h3>
+
+        <ul>
+
+            <li>
+                Consultation on draft 2 of the revised CoC standards 
+                (FSC-STD-40-004 V4-0 D2-0 and FSC-STD-20-011 V4-4 D2-0)
+                opens on 15 May 2026 and closes on 15 June 2026.
+            </li>
+
+            <li>
+                The consultation is available in English, Spanish and French.
+            </li>
+
+            <li>
+                Access the consultation in English or Spanish
+                <a href="https://consultation-platform.fsc.org/en/consultations/take/c1710c72964729" target="_blank">
+                    here
+                </a>.
+            </li>
+
+            <li>
+                Access the consultation in French
+                <a href="https://consultation-platform.fsc.org/en/consultations/take/cd769419e5511" target="_blank">
+                    here
+                </a>.
+            </li>
+
+            <li>
+                Consultation on Draft 1 officially closed on 25 January 2026.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- SCRIPT -->
+<!-- ========================================= -->
+
+<script>
+
+    const steps = document.querySelectorAll('.timeline-step');
+    const descriptions = document.querySelectorAll('.description-box');
+
+    steps.forEach((step, index) => {
+
+        step.addEventListener('click', () => {
+
+            steps.forEach(s => s.classList.remove('active'));
+            descriptions.forEach(d => d.classList.remove('active'));
+
+            step.classList.add('active');
+            descriptions[index].classList.add('active');
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
