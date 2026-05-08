@@ -26,6 +26,10 @@
         height: 10px;
     }
 
+    /* ========================================= */
+    /* TIMELINE BAR COLORS */
+    /* ========================================= */
+
     .timeline::before {
         content: "";
         position: absolute;
@@ -34,15 +38,31 @@
         left: 0;
         width: 100%;
         height: 16px;
+
         background: linear-gradient(
             to right,
+
+            /* 2022 */
             #78BE20 0%,
-            #78BE20 25%,
-            #D4BE97 25%,
+            #78BE20 20%,
+
+            /* 2023 */
+            #CBA4E7 20%,
+            #CBA4E7 40%,
+
+            /* 2024 */
+            #D4BE97 40%,
             #D4BE97 60%,
-            #8ABADD 60%,
+
+            /* 2025 */
+            #A1DA8E 60%,
+            #A1DA8E 80%,
+
+            /* 2026 */
+            #8ABADD 80%,
             #8ABADD 100%
         );
+
         z-index: 1;
         border-radius: 10px;
     }
@@ -78,6 +98,8 @@
         transform: translateY(-50%);
     }
 
+    /* ACTIVE STATE */
+
     .timeline-step.active .circle {
         background: #285C4D;
     }
@@ -89,15 +111,19 @@
         font-size: 24px;
     }
 
+    /* ========================================= */
+    /* DESCRIPTION BOX */
+    /* ========================================= */
+
     .description-box {
         display: none;
         margin-top: 100px;
         min-height: 150px;
         padding: 20px;
         background: white;
-        border-left: 5px solid;
+        border-left: 6px solid;
         text-align: left;
-        max-width: 750px;
+        max-width: 760px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
@@ -124,10 +150,6 @@
         margin-bottom: 18px;
     }
 
-    .description-box strong {
-        color: #285C4D;
-    }
-
     .description-box a {
         color: #285C4D;
         text-decoration: underline;
@@ -147,26 +169,31 @@
 
     <div class="timeline">
 
+        <!-- 2022 -->
         <div class="timeline-step">
             <div class="circle" style="border-color:#78BE20;"></div>
             <span style="color:#78BE20;">2022</span>
         </div>
 
+        <!-- 2023 -->
         <div class="timeline-step">
-            <div class="circle" style="border-color:#78BE20;"></div>
-            <span style="color:#78BE20;">2023</span>
+            <div class="circle" style="border-color:#CBA4E7;"></div>
+            <span style="color:#CBA4E7;">2023</span>
         </div>
 
+        <!-- 2024 -->
         <div class="timeline-step">
             <div class="circle" style="border-color:#D4BE97;"></div>
             <span style="color:#D4BE97;">2024</span>
         </div>
 
+        <!-- 2025 -->
         <div class="timeline-step">
-            <div class="circle" style="border-color:#D4BE97;"></div>
-            <span style="color:#D4BE97;">2025</span>
+            <div class="circle" style="border-color:#A1DA8E;"></div>
+            <span style="color:#A1DA8E;">2025</span>
         </div>
 
+        <!-- 2026 -->
         <div class="timeline-step active">
             <div class="circle" style="border-color:#8ABADD;"></div>
             <span style="color:#8ABADD;">2026</span>
@@ -200,9 +227,9 @@
     <!-- 2023 -->
     <!-- ========================================= -->
 
-    <div id="desc-1" class="description-box" style="border-left-color:#78BE20;">
+    <div id="desc-1" class="description-box" style="border-left-color:#CBA4E7;">
 
-        <h3 style="color:#78BE20;">
+        <h3 style="color:#CBA4E7;">
             2023 – Chain of Custody Topical Workshops
         </h3>
 
@@ -297,10 +324,6 @@
                 </a>
             </li>
 
-            <li>
-                <strong>Timeline:</strong> 16 August – 15 October 2024
-            </li>
-
         </ul>
 
     </div>
@@ -309,9 +332,9 @@
     <!-- 2025 -->
     <!-- ========================================= -->
 
-    <div id="desc-3" class="description-box" style="border-left-color:#D4BE97;">
+    <div id="desc-3" class="description-box" style="border-left-color:#A1DA8E;">
 
-        <h3 style="color:#D4BE97;">
+        <h3 style="color:#A1DA8E;">
             2025 – Working Group & Drafting Phase
         </h3>
 
@@ -326,7 +349,7 @@
             </li>
 
             <li>
-                FSC conducted stakeholder webinars on 18 November and 3 December 2025 with Spanish and French translation support.
+                FSC conducted stakeholder webinars on 18 November and 3 December 2025.
             </li>
 
             <li>
@@ -357,31 +380,25 @@
         <ul>
 
             <li>
-                Consultation on draft 2 of the revised CoC standards 
-                (FSC-STD-40-004 V4-0 D2-0 and FSC-STD-20-011 V4-4 D2-0)
-                opens on 15 May 2026 and closes on 15 June 2026.
+                Consultation on draft 2 of the revised CoC standards opens on 15 May 2026 and closes on 15 June 2026.
             </li>
 
             <li>
-                The consultation is available in English, Spanish and French.
+                Consultation available in English, Spanish and French.
             </li>
 
             <li>
-                Access the consultation in English or Spanish
+                Access English/Spanish consultation
                 <a href="https://consultation-platform.fsc.org/en/consultations/take/c1710c72964729" target="_blank">
                     here
                 </a>.
             </li>
 
             <li>
-                Access the consultation in French
+                Access French consultation
                 <a href="https://consultation-platform.fsc.org/en/consultations/take/cd769419e5511" target="_blank">
                     here
                 </a>.
-            </li>
-
-            <li>
-                Consultation on Draft 1 officially closed on 25 January 2026.
             </li>
 
         </ul>
